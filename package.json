@@ -4,11 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "docs:dev": "vitepress dev packages",
+    "docs:build": "vitepress build packages",
     "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx,.json --max-warnings 0 --cache",
     "lint:fix": "pnpm run lint --fix",
     "format": "prettier --write --cache .",
     "prepare": "husky install",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "vitest test",
+    "coverage": "vitest run --coverage"
   },
   "lint-staged": {
     "*.{vue,js,ts,jsx,tsx,md,json}": [
@@ -26,12 +29,15 @@
     "@types/node": "^18.11.9",
     "@typescript-eslint/eslint-plugin": "^5.44.0",
     "@typescript-eslint/parser": "^5.44.0",
+    "@vitest/coverage-c8": "^0.25.3",
     "eslint": "^8.28.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
     "husky": "^8.0.2",
     "lint-staged": "^13.0.4",
     "prettier": "^2.8.0",
-    "typescript": "^4.9.3"
+    "typescript": "^4.9.3",
+    "vitepress": "1.0.0-alpha.29",
+    "vitest": "^0.25.3"
   }
 }
