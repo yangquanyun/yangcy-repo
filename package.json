@@ -1,0 +1,35 @@
+{
+  "name": "yancy-repo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx,.json --max-warnings 0 --cache",
+    "lint:fix": "pnpm run lint --fix",
+    "format": "prettier --write --cache .",
+    "prepare": "husky install",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "lint-staged": {
+    "*.{vue,js,ts,jsx,tsx,md,json}": [
+      "pnpm run lint",
+      "pnpm run format"
+    ]
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "yancy",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "@typescript-eslint/eslint-plugin": "^5.44.0",
+    "@typescript-eslint/parser": "^5.44.0",
+    "eslint": "^8.28.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.2",
+    "lint-staged": "^13.0.4",
+    "prettier": "^2.8.0",
+    "typescript": "^4.9.3"
+  }
+}
