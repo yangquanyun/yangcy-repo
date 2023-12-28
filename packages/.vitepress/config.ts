@@ -1,16 +1,12 @@
-const Guide = [{ text: 'Get Started', link: '/guide/' }];
-
-const functions = [Guide, { text: 'getDevice', link: '/core/getDevice/' }];
+const functions = [
+  { text: '判断当前的设备', link: '/yutils/getDevice/' }
+];
 
 const vueHooks = [functions, { text: '建设中', link: '' }];
 
-const reactHooks = [functions, { text: '建设中', link: '' }];
-
 const DefaultSideBar = [
-  { text: '指导', items: Guide },
-  { text: '工具函数集合', items: functions },
-  { text: 'Vue Hooks集合', items: vueHooks },
-  { text: 'React Hooks集合', items: reactHooks },
+  { text: '工具函数', items: functions },
+  { text: '业务组件库', items: vueHooks },
 ];
 
 export default {
@@ -28,8 +24,9 @@ export default {
     //   text: '为此页提供修改建议',
     // },
     nav: [
-      { text: '指南', link: '/guild/' },
-      { text: '函数集合', link: '/core/getDevice/' },
+      { text: '首页', link: '/' },
+      { text: '业务组件库', link: '/yui/' },
+      { text: '工具函数', link: '/yutils/' },
     ],
     // 侧边栏
     sidebar: {

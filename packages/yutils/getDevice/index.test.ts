@@ -1,5 +1,4 @@
 import { expect, describe, it } from 'vitest'
-import { getDevice } from '.'
 
 describe('device test', () => {
   it('The device should return {}', () => {

@@ -1,5 +1,5 @@
 {
-  "name": "yutils",
+  "name": "@yancy/yutils",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
